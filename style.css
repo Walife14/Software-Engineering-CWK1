@@ -9,6 +9,7 @@
 #main-container {
     width: 80%;
     margin: auto;
+    background: whitesmoke;
 }
 
 header {
@@ -18,25 +19,45 @@ header {
     background: lightblue;
     justify-content: center;
     align-items: center;
+    min-height: 93px;
 }
 
+#header-text {
+    font-size: 5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
 nav {
-    background: coral;
+    background: rgb(43, 42, 41);
     height: 5vh;
-    margin-bottom: 5vh;
+    min-height: 27px;
 }
 
 nav ul {
     display: flex;
-    align-items: center;
     height: 100%;
-    list-style: none;
+    color: whitesmoke;
+    font-family: arial;
+    font-weight: bold;
 }
 
 nav ul li {
-    background: pink;
-    margin-right: 2em;
-    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background: rgb(15, 15, 15);
+    padding: 0 2em;
+    height: 100%;
+}
+
+nav ul a {
+    margin: 0 2em; /* To add a margin between each of the navigation options */
+    color: white;
 }
 
 /* Index Styling */
@@ -45,22 +66,29 @@ nav ul li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: lightskyblue;
     width: 100%;
     height: 60vh;
     min-height: 400px;
 }
 
 #play-game-box {
-    background: blue;
+    background-image: linear-gradient(114deg, #ff0000 0%, #0b5e3b 46%, #2474c5 100%);
     padding: 5em;
-    border: solid 2px;
+    border: solid 2px black;
+    text-transform: uppercase;
+    border-radius: 2em;
+    box-shadow: 0 8px 6px -6px black;
+    color: white;
 }
 
 #learn-about-rgb-box {
-    background: green;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-transform: uppercase;
+    border-radius: 2em;
     padding: 5em;
     border: solid 2px;
+    box-shadow: 0 8px 6px -6px black;
+    color: black;
 }
 
 /* Game Page Styling */
@@ -86,4 +114,20 @@ nav ul li {
     transition: background 0.6s;
     -webkit-transition: background 0.6s;
     -moz-transition: background 0.6s;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    background: lightblue;
+}
+
+footer span {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
 }
