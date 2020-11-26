@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +39,8 @@ nav ul li {
     margin-left: 2em;
 }
 
+/* Index Styling */
+
 #play-or-learn-section {
     display: flex;
     justify-content: space-around;
@@ -57,4 +61,29 @@ nav ul li {
     background: green;
     padding: 5em;
     border: solid 2px;
+}
+
+/* Game Page Styling */
+
+#stripe {
+    background-color: rgb(37, 37, 37);
+    height: 30px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.square {
+    width: 30%;
+    background: rgb(61, 50, 61);
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.5%;
+    border-radius: 10%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
