@@ -16,11 +16,6 @@ for(var i = 0; i < modeButtons.length; i++){
 
         this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
         reset();
-
-        //figure out how many squares to show
-        //pick new colors
-        //pick a new pickedColor
-        //update page to reflect changes
     });
 }
 
@@ -43,7 +38,7 @@ function reset(){
             squares[i].style.display = "none";
         }
     }
-    h1.style.backgroundColor = "lightblue";
+    h1.style.backgroundColor = "whitesmoke";
 }
 
 resetButton.addEventListener("click", function(){
@@ -67,7 +62,7 @@ for(var i = 0; i < squares.length; i++){
             changeColors(clickedColor);
             h1.style.backgroundColor = clickedColor;
         } else {
-            this.style.background = "#232323";
+            this.style.background = "whitesmoke";
             messageDisplay.textContent = "Try Again";
         }
     });

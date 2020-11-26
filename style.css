@@ -10,6 +10,8 @@
     width: 80%;
     margin: auto;
     background: whitesmoke;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
 }
 
 header {
@@ -28,6 +30,10 @@ header {
 
 a {
     text-decoration: none;
+}
+
+button:hover, .square:hover {
+    cursor: pointer;
 }
 
 /* Navigation */
@@ -93,10 +99,42 @@ nav ul a {
 
 /* Game Page Styling */
 
+#colorDisplay {
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-shadow: 1px 1px 5px #444;
+}
+
 #stripe {
     background-color: rgb(37, 37, 37);
     height: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#stripe div {
+    width: 50%;
+}
+
+.mode {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    outline: inherit;
+}
+
+#message {
+    color: whitesmoke;
+    font-size: 1em;
+    font-family: arial;
+    text-transform: uppercase;
 }
 
 .container {
@@ -104,9 +142,26 @@ nav ul a {
     margin: 20px auto;
 }
 
+#reset {
+    display: block;
+    width: 100%;
+    font-size: 4em;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    outline: inherit;
+    text-shadow: 2px 2px 3px black;
+}
+
+#reset:hover {
+    color: darkgrey;
+}
+
+/* Game Button Options */
+
 .square {
     width: 30%;
-    background: rgb(61, 50, 61);
+    background: whitesmoke;
     padding-bottom: 30%;
     float: left;
     margin: 1.5%;

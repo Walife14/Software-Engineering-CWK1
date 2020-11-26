@@ -9,24 +9,26 @@
 </head>
 <body>
     <header>
-        <h1>LRGB</h1>
+        <span id="header-text">LRGB</span>
     </header>
 <section id="main-container">
     <nav>
         <ul>
-            <li>
-                <a href="index.html">
+            <a href="index.html">
+                <li>
                     HOME
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                </li>
+            </a>
+            <a href="#">
+                <li>
                     PLAY LRGB
-                </a>
-            </li>
-            <li>
-                ABOUT
-            </li>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    ABOUT
+                </li>
+            </a>
         </ul>
     </nav>
     
@@ -35,12 +37,12 @@
     </h1>
 
     <div id="stripe">
-        <button id="reset">New Colors</button>
-        <span id="message"></span>
         <button class="mode">Easy</button>
+        <div>
+            <span id="message">-----</span>
+        </div>
         <button class="mode selected">Hard</button>
     </div>
-
     <div class="container">
         <div class="square"></div>
         <div class="square"></div>
@@ -49,7 +51,12 @@
         <div class="square"></div>
         <div class="square"></div>
     </div>
-
+    <div id="reset-container">
+        <button id="reset">New Colors</button>
+    </div>
 </section>
+<footer>
+    <span>Created by Lucas</span>
+</footer>
 </body>
 </html>
