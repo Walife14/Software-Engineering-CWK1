@@ -97,6 +97,11 @@ nav ul a {
     color: black;
 }
 
+#about-area {
+    margin: auto 2em;
+    padding-bottom: 5em;
+}
+
 /* Game Page Styling */
 
 #colorDisplay {
@@ -128,6 +133,14 @@ nav ul a {
     color: white;
     font-weight: bold;
     outline: inherit;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.mode:hover {
+    background: darkgrey;
+    color: black;
+    transition: 0.2s;
 }
 
 #message {
